@@ -59,8 +59,7 @@ public class Test {
 	@org.junit.Test
 	// Verifica el correcto funcionamiento corriendo el caso fatiga.
 	// Caso fatiga: Mayor cantidad de mesadas, con la mayor cantidad de dimensiones
-	// y todas son apilables en una
-	// pila.
+	// y todas son apilables en una pila.
 	public void fatiga() {
 		App app = new App();
 
