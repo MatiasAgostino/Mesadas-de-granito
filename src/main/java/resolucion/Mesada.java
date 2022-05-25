@@ -30,6 +30,15 @@ public class Mesada implements Comparable<Mesada> {
 	}
 
 	public int compareTo(Mesada o) {
-		return -Long.compare(this.getArea(), o.getArea());
+		Mesada t = this,
+			   ot = o;
+		
+		if(this.alto < this.ancho)
+			t = this.rotar90();
+		
+		if(o.alto < o.ancho)
+			ot = o.rotar90();
+		
+		return -Long.compare(t.alto, ot.alto);
 	}
 }
